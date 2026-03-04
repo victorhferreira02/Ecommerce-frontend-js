@@ -14,22 +14,29 @@
     <link rel="stylesheet" href="styles/pages/checkout/checkout.css" />
   </head>
   <body>
-    <div class="checkout-header">
-      <div class="header-content">
-        <div class="checkout-header-left-section">
-          <a href="amazon.html">
-            <img class="amazon-logo" src="images/amazon-logo.png" />
-            <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png" />
-          </a>
-        </div>
+    <script type="module">
+      import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
 
-        <div class="checkout-header-middle-section">Checkout (<a class="return-to-home-link js-return-to-home-link" href="amazon.html"></a>)</div>
+      import isSatSun from "/scripts/utils/isweekend.js";
 
-        <div class="checkout-header-right-section">
-          <img src="images/icons/checkout-lock-icon.png" />
-        </div>
-      </div>
-    </div>
+      let date = dayjs();
+      console.log(date.format("dddd, MMMM D"));
+      console.log(isWeekend(date));
+
+      date = dayjs().add(2, "day");
+      console.log(date.format("dddd, MMMM D"));
+      console.log(isWeekend(date));
+
+      date = dayjs().add(4, "day");
+      console.log(date.format("dddd, MMMM D"));
+      console.log(isWeekend(date));
+
+      date = dayjs().add(6, "day");
+      console.log(date.format("dddd, MMMM D"));
+      console.log(isWeekend(date));
+    </script>
+
+    <div class="checkout-header js-checkout-header"></div>
 
     <div class="main">
       <div class="page-title">Review your order</div>
