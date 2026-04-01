@@ -26,6 +26,16 @@ class Cart {
     }
   }
 
+  updateQuantity(productId, newQuantity) {
+    this.cartItems.forEach((item) => {
+      if (item.productId === productId) {
+        item.quantity = newQuantity;
+      }
+    });
+
+    this.saveToStorage();
+  }
+
   saveToStorage() {
     localStorage.setItem(this.#localStorageKey, JSON.stringify(this.cartItems));
   }

@@ -5,6 +5,7 @@ import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
 import { deliveryOptions, getDeliveryOption } from "../../data/deliveryOptions.js";
 import { renderPaymentSummary } from "../checkout/paymentSummary.js";
 import { renderCheckoutHeader } from "./checkoutHeader.js";
+//import { removeFromCart } from "../../data/cart.js";
 
 export function renderOrderSummary() {
   let cartSummaryHTML = "";
@@ -115,10 +116,10 @@ export function renderOrderSummary() {
   document.querySelectorAll(".js-delete-link").forEach((link) => {
     link.addEventListener("click", () => {
       const productId = link.dataset.productId;
-      cart.FromCart(productId);
+      cart.removeFromCart(productId);
 
-      const container = document.querySelector(`.js-cart-item-container-${productId}`);
-      container.remove();
+      //const container = document.querySelector(`.js-cart-item-container-${productId}`);
+      //container.remove();
 
       renderPaymentSummary();
       renderOrderSummary();
@@ -138,7 +139,7 @@ export function renderOrderSummary() {
         return;
       }
 
-      updateQuantity(productId, newQuantity);
+      cart.updateQuantity(productId, newQuantity);
 
       renderCheckoutHeader();
       renderOrderSummary();
@@ -149,8 +150,6 @@ export function renderOrderSummary() {
 
       const quantityLabel = document.querySelector(`.js-quantity-label-${productId}`);
       quantityLabel.innerHTML = newQuantity;
-
-      updateCartQuantity();
     });
   });
 
