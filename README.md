@@ -1,15 +1,10 @@
 # javascript-amazon-project
 
-> Projeto de estudo inspirado na Amazon, desenvolvido como parte de um curso e **ainda em processo de finalização**.
+> Este é um projeto de e-commerce inspirado na Amazon, desenvolvido com foco em praticar lógica de programação, manipulação de DOM e organização de código no front-end..
 
-## 🔧 Status do Projeto
-
-Este projeto **ainda não está completamente finalizado**.  
-Estou desenvolvendo e ajustando as funcionalidades conforme avanço no curso, então novas features, melhorias e correções serão adicionadas continuamente.
 
 ## 🎓 Sobre o Projeto
-
-Este repositório faz parte de um **curso/prática de aprendizado em JavaScript**.  
+ 
 O foco é construir uma estrutura de e-commerce do zero, aplicando:
 
 - Lógica de programação  
@@ -73,25 +68,9 @@ tracking.html    — página de rastreamento.
 
 ## 🛠️ Melhorias Futuras
 
-- Conclusão do carrinho completo
-- Melhorias de layout responsivo
-- Backend real com API
-- Persistência de dados
 - Autenticação de usuários
 - Testes automatizados
 
-## 🤝 Como Contribuir
-1. Faça um fork
-2. Crie uma branch
-```bash
-git checkout -b feature/nova-feature
-```
-3. Faça commit e push:
-```bash
-git commit -m "Nova funcionalidade"
-git push origin feature/nova-feature
-```
-4. Abra um Pull Request
    
 ## 📄 Licença
 Projeto sob licença MIT.
