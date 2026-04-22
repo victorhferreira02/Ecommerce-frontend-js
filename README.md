@@ -1,4 +1,5 @@
-# javascript-amazon-project
+# Ecommerce-frontend-js
+
 
 > Este é um projeto de e-commerce inspirado na Amazon, desenvolvido com foco em praticar lógica de programação, manipulação de DOM e organização de código no front-end..
 
