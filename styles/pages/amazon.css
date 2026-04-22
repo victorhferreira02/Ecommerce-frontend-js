@@ -2,33 +2,21 @@
   margin-top: 60px;
 }
 
+/* GRID MAIS MODERNO */
 .products-grid {
   display: grid;
-
-  /* - In CSS Grid, 1fr means a column will take up the
-       remaining space in the grid.
-     - If we write 1fr 1fr ... 1fr; 8 times, this will
-       divide the grid into 8 columns, each taking up an
-       equal amount of the space.
-     - repeat(8, 1fr); is a shortcut for repeating "1fr"
-       8 times (instead of typing out "1fr" 8 times).
-       repeat(...) is a special property that works with
-       display: grid; */
   grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
-/* @media is used to create responsive design (making the
-   website look good on any screen size). This @media
-   means when the screen width is 2000px or less, we
-   will divide the grid into 7 columns instead of 8. */
+/* RESPONSIVIDADE (mantive a sua lógica) */
 @media (max-width: 2000px) {
   .products-grid {
     grid-template-columns: repeat(7, 1fr);
   }
 }
 
-/* This @media means when the screen width is 1600px or
-   less, we will divide the grid into 6 columns. */
 @media (max-width: 1600px) {
   .products-grid {
     grid-template-columns: repeat(6, 1fr);
@@ -65,41 +53,50 @@
   }
 }
 
+/* CARD DE PRODUTO (GRANDE MELHORIA AQUI) */
 .product-container {
-  padding-top: 40px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
 
-  border-right: 1px solid rgb(231, 231, 231);
-  border-bottom: 1px solid rgb(231, 231, 231);
+  border: 1px solid rgb(231, 231, 231);
 
   display: flex;
   flex-direction: column;
+
+  transition: all 0.2s ease;
 }
 
+/* HOVER PROFISSIONAL */
+.product-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGEM */
 .product-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 
   height: 180px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .product-image {
-  /* Images will overflow their container by default. To
-    prevent this, we set max-width and max-height to 100%
-    so they stay inside their container. */
   max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
 }
 
+/* NOME */
 .product-name {
   height: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
+/* RATING */
 .product-rating-container {
   display: flex;
   align-items: center;
@@ -117,43 +114,55 @@
   margin-top: 3px;
 }
 
+/* PREÇO (melhor destaque) */
 .product-price {
   font-weight: 700;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
+/* QUANTIDADE */
 .product-quantity-container {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
+/* ESPAÇADOR */
 .product-spacer {
   flex: 1;
 }
 
+/* FEEDBACK VISUAL */
 .added-to-cart {
   color: rgb(6, 125, 98);
-  font-size: 16px;
+  font-size: 14px;
 
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 
-  /* At first, the "Added to cart" message will
-     be invisible. Use JavaScript to change the
-     opacity and make it visible. */
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .added-to-cart img {
-  height: 20px;
+  height: 18px;
   margin-right: 5px;
 }
 
-.add-to-cart-button {
-  width: 100%;
-  padding: 8px;
-  border-radius: 50px;
-}
 .added-to-cart-visible {
   opacity: 1;
+}
+
+/* BOTÃO MELHORADO */
+.add-to-cart-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+
+  transition: all 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  transform: scale(1.02);
 }
