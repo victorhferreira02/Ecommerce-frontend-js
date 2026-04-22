@@ -1,77 +1,83 @@
-# Ecommerce-frontend-js
+# 🛒 Amazon Clone (JavaScript)
 
+🔗 **Acesse o projeto:** 
 
-> Este é um projeto de e-commerce inspirado na Amazon, desenvolvido com foco em praticar lógica de programação, manipulação de DOM e organização de código no front-end..
+https://ecommerce-frontend-js-six.vercel.app/
 
+---
 
-## 🎓 Sobre o Projeto
- 
-O foco é construir uma estrutura de e-commerce do zero, aplicando:
+## 📌 Sobre o projeto
 
-- Lógica de programação  
-- Manipulação de DOM  
-- Organização de arquivos  
-- Estrutura modular  
-- Simulação de fluxo completo de compra  
+Este é um projeto de e-commerce front-end inspirado na Amazon, desenvolvido com foco em praticar lógica de programação, manipulação de DOM e organização de código em JavaScript puro.
 
-É um ambiente perfeito para treinar habilidades reais utilizadas no desenvolvimento web.
+A aplicação simula uma experiência real de compra online, incluindo navegação entre páginas, carrinho de compras, checkout e acompanhamento de pedidos.
 
-## ✨ Visão Geral
+---
 
-O projeto simula um e-commerce básico com páginas de:
+## 🚀 Funcionalidades
 
-- Catálogo (amazon.html)  
-- Checkout (checkout.html)  
-- Pedidos (orders.html)  
-- Rastreamento (tracking.html)  
+* 📦 Listagem de produtos
+* 🛒 Adição e remoção de itens no carrinho
+* 🔢 Atualização de quantidade de produtos
+* 💰 Cálculo automático de valores
+* 📄 Página de checkout
+* 📦 Histórico de pedidos
+* 🚚 Rastreamento de pedidos
 
-## 🧰 Tecnologias Utilizadas
+---
 
-- **HTML**
-- **CSS**
-- **JavaScript**
-- Estrutura modular com pastas: `styles/`, `scripts/`, `data/`, `images/`, `backend/`
+## 🛠️ Tecnologias utilizadas
 
-## 🚀 Como Rodar Localmente
+* HTML5
+* CSS3
+* JavaScript (ES6+)
 
-1. Clone o repositório:
+---
+
+## 🧱 Estrutura do projeto
+
+* `index.html` → Página principal (produtos)
+* `checkout.html` → Finalização de compra
+* `orders.html` → Histórico de pedidos
+* `tracking.html` → Rastreamento
+
+---
+
+## ▶️ Como executar o projeto
+
 ```bash
-git clone https://github.com/victorhferreira02/javascript-amazon-project.git `
+git clone https://github.com/victorhferreira02/SEU-REPO.git
 ```
-2. Entre na pasta:
+
+Abra o arquivo:
+
 ```bash
-cd javascript-amazon-project 
+index.html
 ```
-3. Abra o arquivo amazon.html no navegador
-(ou use Live Server no VS Code).
 
-## 📂 Estrutura do Projeto
+---
 
- ```bash
-/backend         — lógica de backend simples.
-/data            — dados estáticos.
-/images          — imagens do projeto.
-/scripts         — código JavaScript.
-/styles          — arquivos CSS.
-amazon.html      — página principal.
-checkout.html    — página de checkout.
-orders.html      — página de pedidos.
-tracking.html    — página de rastreamento.
-```
-## 🎯 Funcionalidades
+## 📚 Aprendizados
 
-- Exibição de produtos
-- Sistema de carrinho
-- Tela de checkout
-- Histórico de pedidos
-- Rastreamento básico
-  
+Durante o desenvolvimento deste projeto, foram aplicados conceitos importantes como:
 
-## 🛠️ Melhorias Futuras
+* Manipulação de DOM
+* Organização de código JavaScript
+* Lógica de carrinho de compras
+* Estruturação de múltiplas páginas
+* Simulação de fluxo de e-commerce
 
-- Autenticação de usuários
-- Testes automatizados
+---
 
-   
-## 📄 Licença
-Projeto sob licença MIT.
+## 🎯 Melhorias futuras
+
+* Integração com API real de produtos
+* Persistência de dados (localStorage ou backend)
+* Melhorias de responsividade
+* Interface mais moderna
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por Victor Hugo Ferreira
