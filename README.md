@@ -64,7 +64,7 @@ tracking.html    — página de rastreamento.
 - Tela de checkout
 - Histórico de pedidos
 - Rastreamento básico
-⚠️ Algumas funcionalidades ainda estão sendo implementadas ou melhoradas.
+  
 
 ## 🛠️ Melhorias Futuras
 
