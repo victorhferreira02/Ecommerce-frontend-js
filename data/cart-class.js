@@ -40,7 +40,7 @@ class Cart {
     localStorage.setItem(this.#localStorageKey, JSON.stringify(this.cartItems));
   }
 
-  addToCart(productId) {
+  addToCart(productId, quantity) {
     let matchingItem;
 
     this.cartItems.forEach((cartItem) => {
@@ -50,11 +50,11 @@ class Cart {
     });
 
     if (matchingItem) {
-      matchingItem.quantity += 1;
+      matchingItem.quantity += quantity;
     } else {
       this.cartItems.push({
         productId: productId,
-        quantity: 1,
+        quantity: quantity,
         deliveryOptionId: "1",
       });
     }
